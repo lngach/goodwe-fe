@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ../shared/user/styles.ejs %>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <% include ../shared/user/header.ejs %>
+    <!-- /HEADER -->
+    <div id="vide">
+      <div class="container">
+        <div class="banner-info">
+          <div class="dump-height"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION -->
+
+    <!--banner-->
+    <div class="single">
+      <div class="container">
+        <div class="single-top-main">
+          <div class="col-md-5 single-top">
+            <div class="single-w3agile">
+              <div id="picture-frame">
+                <img
+                  src="<%= product.image %>"
+                  data-src="<%= product.image %>"
+                  alt="<%= product.name %>"
+                  title="<%= product.name %>"
+                  class="img-responsive"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 single-top-left">
+            <div class="single-right">
+              <h1 style="color: #18bc9b; font-family: 'EB Garamond', serif;">
+                <%=product.name %>
+              </h1>
+              <% if (product.categories.id !== 12 ) { %>
+              <div class="pr-single">
+                <p class="reduced show-detail">
+                  Giá: <%= product.price === 0 ? 'Liên hệ' : new Intl.NumberFormat('vi-VN', {
+                    style: 'currency',
+                    currency: 'VND',
+                  }).format(product.price) %>
+                </p>
+              </div>
+              <% if (product.provider.id !== 26) { %>
+              <p class="show-detail">
+                <strong>Thương Hiệu: </strong>
+                <a
+                  href="/<%= product.product_type.slug %>/<%= product.categories.slug %>/<%= product.provider.slug %>"
+                  ><%= product.provider.name %></a
+                >
+              </p>
+              <% } %>
+              <p class="show-detail">
+                <strong>Danh mục:</strong>
+                <a
+                  href="/<%= product.product_type.slug %>/<%= product.categories.slug %>"
+                  ><%= product.categories.name %></a
+                >
+              </p>
+              <p class="show-detail">
+                <strong>Loại:</strong>
+                <a href="/<%= product.product_type.slug %>"
+                  ><%= product.product_type.name %></a
+                >
+              </p class="show-detail">
+              <div class="pr-single">
+                <% if (product.warranty > 0) { %>
+                <p class="reduced show-detail">
+                  Bảo hành: <%= product.warranty %> Tháng
+                </p>
+                <% } %>
+              </div>
+              <% } else { %>
+              <div class="pr-single">
+                <p class="reduced show-detail">
+                  Đăng lúc: <%= product.createdAt.toLocaleString() %>
+                  <br />
+                  Lần cập nhật cuối cùng: <%= product.updatedAt.toLocaleString()
+                  %>
+                  <br />
+                  Danh mục: <%= product.categories.name %>
+                </p>
+              </div>
+              <% } %> <% if (product.content.split(" ").length <= 20) { %>
+              <div style="margin-top: 3em;" class="tiny-content">
+                <%- product.content %>
+              </div>
+              <% } %>
+              <ul class="social-top">
+                <li>
+                  <a href="#" class="icon facebook"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ><span></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="icon twitter"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ><span></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="icon pinterest"
+                    ><i class="fa fa-pinterest-p" aria-hidden="true"></i
+                    ><span></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="icon dribbble"
+                    ><i class="fa fa-dribbble" aria-hidden="true"></i
+                    ><span></span
+                  ></a>
+                </li>
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <% if (product.content.split(" ").length > 20) { %>
+    <div class="container">
+      <div style="padding: 3em 1em;" class="tiny-content">
+        <%- product.content %>
+      </div>
+    </div>
+    <% } %>
+    <!---->
+    <div class="content-top offer-w3agile">
+      <div class="container">
+        <div class="spec">
+          <% if(product.categories.id === 12) { %>
+          <h3>Tin liên quan</h3>
+          <% } else { %>
+          <h3>Sản phẩm liên quan</h3>
+          <% } %>
+          <div class="ser-t">
+            <b></b>
+            <span><i></i></span>
+            <b class="line"></b>
+          </div>
+        </div>
+        <div class="con-w3l">
+          <% relatedProducts.forEach(item => { %>
+          <div class="col-md-3 pro-1">
+            <div class="col-m fixed-height">
+              <a href="/<%= item.slug %>" class="offer-img">
+                <img
+                  data-src="<%= item.image %> "
+                  class="img-responsive img-110 lazy-image"
+                  alt="<%= item.name %>"
+                  title="<%= item.name %>"
+                />
+              </a>
+              <div class="mid-1">
+                <div class="women">
+                  <h6>
+                    <a href="/<%= item.slug %>">
+                      <% if (item.name.split(" ").length > 15) { %> <%=
+                      item.name.slice(0, 100) %> ... <% } else { %> <%=
+                      item.name %> <% } %>
+                    </a>
+                  </h6>
+                </div>
+                <% if (item.categories.id !== 12){ %>
+                <div class="pr-single">
+                  <p class="reduced">
+                    Giá: <%= item.price === 0 ? 'Liên hệ' : new Intl.NumberFormat('vi-VN', {
+                      style: 'currency',
+                      currency: 'VND',
+                    }).format(item.price) %>
+                  </p>
+                </div>
+                <% if (item.provider.id !== 26) { %>
+                <p>
+                  <strong>Thương hiệu: </strong>
+                  <a
+                    href="/<%= item.product_type.slug %>/<%= item.categories.slug %>/<%= item.provider.slug %>"
+                    ><%= item.provider.name %></a
+                  >
+                </p>
+                <% } %>
+                <p>
+                  <strong>Danh mục:</strong>
+                  <a
+                    href="/<%= item.product_type.slug %>/<%= item.categories.slug %>"
+                    ><%= item.categories.name %></a
+                  >
+                </p>
+                <p>
+                  <strong>Loại:</strong>
+                  <a href="/<%= item.product_type.slug %>"
+                    ><%= item.product_type.name %></a
+                  >
+                </p>
+                <% } else { %>
+                <div style="margin-top: 1.5em;"></div>
+                <p>
+                  <strong>Đăng lúc:</strong>
+                   <%= item.createdAt.toLocaleString() %>
+                </p>
+                <p>
+                  <strong>Danh mục:</strong>
+                  <%= item.categories.name %>
+                </p>
+                <% } %>
+              </div>
+            </div>
+          </div>
+          <% }) %>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- /Section -->
+
+    <!-- FOOTER -->
+    <% include ../shared/user/footer.ejs %>
+    <!-- /FOOTER -->
+    <!-- jQuery Plugins -->
+    <% include ../shared/user/scripts.ejs %>
+    <!-- jQuery Plugins -->
+  </body>
+</html>

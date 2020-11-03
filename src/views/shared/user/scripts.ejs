@@ -1,0 +1,193 @@
+<script type="application/x-javascript">
+  addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+     function hideURLbar(){ window.scrollTo(0,1); }
+</script>
+<script src="/js/jquery-1.11.1.min.js"></script>
+<!-- <script type="text/javascript" src="/js/move-top.js"></script> -->
+<script src="/js/bootstrap.js"></script>
+
+<!-- <script type="text/javascript" src="/js/move-top.js"></script> -->
+
+<script type="text/javascript" src="/js/easing.js"></script>
+
+<!--- start-rate---->
+<script src="/js/jstarbox.js"></script>
+
+<script src="/js/jquery.vide.min.js"></script>
+<script
+  type="text/javascript"
+  src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function ($) {
+    $('.scroll').click(function (event) {
+      event.preventDefault()
+      $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000)
+    })
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 600, density: { enable: true, value_area: 800 } },
+        color: { value: '#ffffff' },
+        shape: {
+          type: 'circle',
+          stroke: { width: 0, color: '#000000' },
+          polygon: { nb_sides: 5 },
+          image: { src: 'img/github.svg', width: 100, height: 100 },
+        },
+        opacity: {
+          value: 1,
+          random: true,
+          anim: { enable: true, speed: 1, opacity_min: 0, sync: false },
+        },
+        size: {
+          value: 3,
+          random: true,
+          anim: { enable: false, speed: 4, size_min: 0.3, sync: false },
+        },
+        line_linked: {
+          enable: false,
+          distance: 50,
+          color: '#ffffff',
+          opacity: 1,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 1,
+          direction: 'none',
+          random: true,
+          straight: false,
+          out_mode: 'out',
+          bounce: false,
+          attract: { enable: false, rotateX: 0, rotateY: 0 },
+        },
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: { enable: false, mode: 'bubble' },
+          onclick: { enable: false, mode: 'repulse' },
+          resize: true,
+        },
+        modes: {
+          grab: { distance: 50, line_linked: { opacity: 1 } },
+          bubble: { distance: 50, size: 0, duration: 2, opacity: 0, speed: 3 },
+          repulse: { distance: 50, duration: 0.4 },
+          push: { particles_nb: 4 },
+          remove: { particles_nb: 2 },
+        },
+      },
+      retina_detect: true,
+    })
+  })
+
+  $('#vide').vide(
+    {
+      mp4: '/video/video.jpg.jpg',
+      jpg: '/video/video.jpg.jpg',
+      poster: '/video/video.jpg.jpg',
+    },
+    {
+      posterType: 'jpg',
+      loop: true,
+      muted: true,
+    }
+  )
+
+  $('.autoplay').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    infinite: true,
+    arrows: false,
+    centerMode: true,
+    cssEase: 'linear',
+    speed: 5000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: 'unslick',
+      },
+    ],
+  })
+
+  $('.submenu').hover(function () {
+    $('.submenu.open').each(function () {
+      $(this).removeClass('open')
+    })
+    $(this).toggleClass('open')
+  })
+  $('.submenu2').hover(function () {
+    $('.submenu2.open').each(function () {
+      $(this).removeClass('open')
+    })
+    $(this).toggleClass('open')
+  })
+  $('.submenu2').hover(function () {
+    $('.submenu2.open').each(function () {
+      $(this).removeClass('open')
+    })
+    $(this).toggleClass('open')
+  })
+  $('#nav-tgle').on('click', () => {
+    $('#bs-megadropdown-tabs').css('background-color', '#ff8e00')
+  })
+
+  function updateQueryStringParam(key, value) {
+    baseUrl = [location.protocol, '//', location.host, location.pathname].join(
+      ''
+    )
+    urlQueryString = document.location.search
+    var newParam = key + '=' + value,
+      params = '?' + newParam
+
+    // If the "search" string exists, then build params from it
+    if (urlQueryString) {
+      keyRegex = new RegExp('([?&])' + key + '[^&]*')
+      // If param exists already, update it
+      if (urlQueryString.match(keyRegex) !== null) {
+        params = urlQueryString.replace(keyRegex, '$1' + newParam)
+      } else {
+        // Otherwise, add it to end of query string
+        params = urlQueryString + '&' + newParam
+      }
+    }
+    window.history.replaceState({}, '', baseUrl + params)
+  }
+
+  let images = [...document.querySelectorAll('.lazy-image')]
+
+  const interactSettings = {}
+
+  function onIntersection(imageEntites) {
+    imageEntites.forEach((image) => {
+      if (image.isIntersecting) {
+        observer.unobserve(image.target)
+        image.target.src = image.target.dataset.src
+        image.target.onload = () => image.target.classList.add('loaded')
+      }
+    })
+  }
+
+  let observer = new IntersectionObserver(onIntersection, interactSettings)
+
+  images.forEach((image) => observer.observe(image))
+</script>
+<% include ./showScript.ejs %>
