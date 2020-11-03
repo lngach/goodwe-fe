@@ -5,6 +5,8 @@ const logger = require('morgan')
 const pagesRouter = require('./src/routes/user/index')
 const sequelize = require('./src/utils/provider')
 const Category = require('./src/models/category')
+const Provider = require('./src/models/provider')
+const ProductType = require('./src/models/product_type')
 const { QueryTypes } = require('sequelize')
 var app = express()
 
@@ -121,9 +123,19 @@ app.use(async (req, res, next) => {
     return newPt
   })
   const fullUrl = req.protocol + 's://' + req.get('host') + req.originalUrl
+  
+  let sharedProviders = await Provider.findAll()
+  let sharedCategories = await Category.findAll()
+  let sharedProductTypes = await ProductType.findAll()
+
+  res.local.sharedProviders = sharedProviders
+  res.local.sharedCategories = sharedCategories
+  res.local.sharedProductTypes = sharedProductTypes
+
   res.locals.canonical = fullUrl.replace(/\?.*$/, '')
   res.locals.categoryCollections = categoryCollections
   res.locals.runtimeCategories = categories
+
   next()
 })
 
