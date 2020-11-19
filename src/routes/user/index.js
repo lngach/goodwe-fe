@@ -22,8 +22,20 @@ router.get('/:slug', async (req, res) => {
     case 'home':
       res.redirect('/')
       break
-    case 'dich-vu':
-      service(req, res)
+    case 'dan-dung':
+      civil(req, res)
+      break
+    case 'luu-tru-nang-luong':
+      energy(req, res)
+      break
+    case 'thuong-mai':
+      commerce(req, res)
+      break
+    case 'gioi-han-cong-suat':
+      production(req, res)
+      break
+    case 'bao-hanh':
+      guarantee(req, res)
       break
     case 'tim-kiem':
       search(req, res)
@@ -128,9 +140,22 @@ const news = async (req, res) => {
   }
 }
 
-const service = (_, res) => {
-  res.render('user/services', { title: 'Dịch Vụ' })
+const civil = (_, res) => {
+  res.render('user/civil', { title: 'Dân Dụng' })
 }
+const energy = (_, res) => {
+  res.render('user/energy-storage', { title: 'Lưu Trữ Năng Lượng' })
+}
+const commerce = (_, res) => {
+  res.render('user/commerce', { title: 'Thương Mại' })
+}
+const production = (_, res) => {
+  res.render('user/production-limit', { title: 'Giới Hạn Công Suất' })
+}
+const guarantee = (_, res) => {
+  res.render('user/guarantee', { title: 'Bảo Hành' })
+}
+
 
 const search = async (req, res) => {
   const key = req.query['tu-khoa']

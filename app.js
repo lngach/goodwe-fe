@@ -128,9 +128,9 @@ app.use(async (req, res, next) => {
   let sharedCategories = await Category.findAll()
   let sharedProductTypes = await ProductType.findAll()
 
-  res.local.sharedProviders = sharedProviders
-  res.local.sharedCategories = sharedCategories
-  res.local.sharedProductTypes = sharedProductTypes
+  res.locals.sharedProviders = sharedProviders
+  res.locals.sharedCategories = sharedCategories
+  res.locals.sharedProductTypes = sharedProductTypes
 
   res.locals.canonical = fullUrl.replace(/\?.*$/, '')
   res.locals.categoryCollections = categoryCollections
