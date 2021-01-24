@@ -188,6 +188,28 @@ h5 {
   color: #fff;
 }
 .dropdown-menu {
-  background-color: #506190 !important;
-  text-align: center !important;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 0;
+}
+.dropdown-menu li {
+  height: 40px !important;
+  padding: 0 5px !important;
+  margin: 5px 0;
+}
+.dropdown-menu li a::before {
+  background: transparent !important;
+}
+.dropdown-menu li a:hover {
+  transition: none !important;
+  color: #fff !important;
+}
+.dropdown-menu li:hover {
+  background: #00d8ff;
+  color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .dropdown-menu {
+    text-align: left;
+  }
 }
