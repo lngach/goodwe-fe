@@ -1,0 +1,98 @@
+.product-detail {
+  width: 100%;
+  position: relative;
+}
+
+.product-detail .border-none {
+  border: 0 !important;
+}
+
+.product-detail .box {
+  width: 100%;
+  height: 800px;
+}
+
+.product-detail .box-bg1 {
+  background: url(../../images/products/XS-02.jpg) no-repeat;
+  background-size: cover;
+}
+
+.product-detail .box-bg2 {
+  background: url(../../images/products/XS-Series_03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail .box-bg3 {
+  background: url(../../images/products/XS-Series_04.jpg) no-repeat;
+  background-size: cover;
+}
+
+.product-detail .box .box-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 350px;
+  width: 1200px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product-detail .box .box-item.box-reverse {
+  flex-direction: row-reverse;
+  padding-top: 290px;
+}
+
+.product-detail .box .box-item.box-reverse .box-content {
+  margin-left: 0;
+  width: 100%;
+}
+
+.product-detail .box .box-item.box-reverse .box-content .box-content-main {
+  width: 45%;
+}
+
+.product-detail .box .box-item .box-img {
+  width: 245px;
+  height: 200px;
+}
+
+.product-detail .box .box-item .box-img img {
+  width: 100%;
+  height: auto;
+}
+
+.product-detail .box .box-item .box-content {
+  width: calc(100% - 295px);
+  margin-left: 50px;
+}
+
+.product-detail .box .box-item .box-content .box-content-title {
+  color: #fff;
+  display: flex;
+  align-items: baseline;
+  border-bottom: 2px solid;
+}
+
+.product-detail .box .box-item .box-content .borderBottom-title {
+  background: #fff;
+  height: 8px;
+  width: 280px;
+}
+
+.product-detail .box .box-item .box-content .box-content-main p {
+  color: #eee;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.product-detail .box .box-item .box-content .box-content-title h1 {
+  font-size: 50px;
+}
+
+.product-detail .box .box-item .box-content .box-content-title .sub-title {
+  font-size: 16px;
+  padding-left: 10px;
+}
