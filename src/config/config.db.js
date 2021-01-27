@@ -1,6 +1,6 @@
 const HOST = 'localhost'
 const USER = 'root'
-const PASSWORD = "Fuckin'damn113"
+const PASSWORD = "1103"
 const DATABASE = 'solar_development'
 const ADAPTER = 'mysql'
 
