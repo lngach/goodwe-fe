@@ -3,6 +3,9 @@ const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 const pagesRouter = require('./src/routes/user/index')
+const solutionRouter = require('./src/routes/giai-phap/index')
+const supportRouter = require('./src/routes/ho-tro/index')
+const aboutRouter = require('./src/routes/ve-chung-toi/index')
 const sequelize = require('./src/utils/provider')
 const Category = require('./src/models/category')
 const Provider = require('./src/models/provider')
@@ -139,6 +142,9 @@ app.use(async (req, res, next) => {
   next()
 })
 
+app.use('/giai-phap', solutionRouter)
+app.use('/ho-tro', supportRouter)
+app.use('/ve-chung-toi', aboutRouter)
 app.use(pagesRouter)
 
 // catch 404 and forward to error handler

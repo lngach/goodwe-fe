@@ -10,9 +10,9 @@ const paginate = require('../../config/config.paginate')
 const path = require('path')
 const _ = require('lodash')
 
-router.get('/', async (_, res) => {
-  return index(res)
-})
+// router.get('/', async (_, res) => {
+//   return index(res)
+// })
 
 // router.get('/:slug', async (req, res) => {
 //   switch (req.params.slug) {
@@ -424,92 +424,92 @@ router.get('/', async (_, res) => {
 //   }
 // }
 
-const index = async (res) => {
-  try {
-    // 8 san pham moi nhat
-    let newProducts = await Product.findAll({
-      limit: 8,
-      order: [['updated_at', 'DESC']],
-      include: [
-        Provider,
-        {
-          model: Category,
-          as: 'categories',
-          where: { id: { $not: 12 }, isActive: true },
-        },
-        ProductType,
-      ],
-      where: { isActive: true },
-    })
+// const index = async (res) => {
+//   try {
+//     // 8 san pham moi nhat
+//     let newProducts = await Product.findAll({
+//       limit: 8,
+//       order: [['updated_at', 'DESC']],
+//       include: [
+//         Provider,
+//         {
+//           model: Category,
+//           as: 'categories',
+//           where: { id: { $not: 12 }, isActive: true },
+//         },
+//         ProductType,
+//       ],
+//       where: { isActive: true },
+//     })
 
-    // 8 san pham dc ban chay nhat
-    let topSellProducts = await Product.findAll({
-      limit: 8,
-      order: [['sales', 'DESC']],
-      where: { isActive: true },
-      include: [
-        Provider,
-        {
-          model: Category,
-          as: 'categories',
-          where: { id: { $not: 12 }, isActive: true },
-        },
-        ProductType,
-      ],
-    })
-    // 8 san pham duoc quan tam nhieu nhat
-    let topViewProducts = await Product.findAll({
-      limit: 8,
-      order: [['views', 'DESC']],
-      where: { isActive: true },
-      include: [
-        Provider,
-        {
-          model: Category,
-          as: 'categories',
-          where: { id: { $not: 12 }, isActive: true },
-        },
-        ProductType,
-      ],
-    })
-    // 6 Tin mới nhất
-    let news = await Product.findAll({
-      limit: 6,
-      order: [['updated_at', 'DESC']],
-      where: { isActive: true },
-      include: [
-        {
-          model: Provider,
-          as: 'provider',
-          where: { id: 26, isActive: true },
-        },
-        {
-          model: Category,
-          as: 'categories',
-          where: { id: 12, isActive: true },
-        },
-        ProductType,
-      ],
-    })
-    res.render('user/index', {
-      title: 'Ngọc Quốc Computer - Sửa chữa lắp đặt thiết bị vi tính',
-      newProducts,
-      topSellProducts,
-      topViewProducts,
-      newProducts,
-      news,
-    })
-  } catch (error) {
-    res.render('user/index', {
-      title: 'Ngọc Quốc Computer - Sửa chữa lắp đặt thiết bị vi tính',
-      newProducts: [],
-      topSellProducts: [],
-      topViewProducts: [],
-      newProducts: [],
-      news: [],
-    })
-  }
-}
+//     // 8 san pham dc ban chay nhat
+//     let topSellProducts = await Product.findAll({
+//       limit: 8,
+//       order: [['sales', 'DESC']],
+//       where: { isActive: true },
+//       include: [
+//         Provider,
+//         {
+//           model: Category,
+//           as: 'categories',
+//           where: { id: { $not: 12 }, isActive: true },
+//         },
+//         ProductType,
+//       ],
+//     })
+//     // 8 san pham duoc quan tam nhieu nhat
+//     let topViewProducts = await Product.findAll({
+//       limit: 8,
+//       order: [['views', 'DESC']],
+//       where: { isActive: true },
+//       include: [
+//         Provider,
+//         {
+//           model: Category,
+//           as: 'categories',
+//           where: { id: { $not: 12 }, isActive: true },
+//         },
+//         ProductType,
+//       ],
+//     })
+//     // 6 Tin mới nhất
+//     let news = await Product.findAll({
+//       limit: 6,
+//       order: [['updated_at', 'DESC']],
+//       where: { isActive: true },
+//       include: [
+//         {
+//           model: Provider,
+//           as: 'provider',
+//           where: { id: 26, isActive: true },
+//         },
+//         {
+//           model: Category,
+//           as: 'categories',
+//           where: { id: 12, isActive: true },
+//         },
+//         ProductType,
+//       ],
+//     })
+//     res.render('user/index', {
+//       title: 'Ngọc Quốc Computer - Sửa chữa lắp đặt thiết bị vi tính',
+//       newProducts,
+//       topSellProducts,
+//       topViewProducts,
+//       newProducts,
+//       news,
+//     })
+//   } catch (error) {
+//     res.render('user/index', {
+//       title: 'Ngọc Quốc Computer - Sửa chữa lắp đặt thiết bị vi tính',
+//       newProducts: [],
+//       topSellProducts: [],
+//       topViewProducts: [],
+//       newProducts: [],
+//       news: [],
+//     })
+//   }
+// }
 
 // const pricing = async (res) => {
 //   try {
@@ -542,6 +542,10 @@ const index = async (res) => {
 //     res.render('user/pricing', { categories: [], title: 'Bảng Giá' })
 //   }
 // }
+
+router.get('/', (_, res) => {
+  res.render('user/index', { title: 'Trang chủ' })
+})
 
 router.get('/products-type', (_, res) => {
   res.render('user/products-type', {title: "Products Type"})

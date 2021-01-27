@@ -176,6 +176,9 @@
 } /*max-width:767px*/
 
 @media screen and (max-width: 660px) {
+  .item-title {
+    bottom: 15%;
+  }
   .home1-testm-single {
     max-width: 350px;
     margin: 0 auto;
