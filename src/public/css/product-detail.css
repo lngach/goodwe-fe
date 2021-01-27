@@ -7,28 +7,17 @@
   border: 0 !important;
 }
 
+.product-detail .box .title {
+  font-size: 30px;
+  text-align: center;
+  font-weight:bold;
+  color: #fff;
+}
+
 .product-detail .box {
   width: 100%;
   min-height: 800px;
   padding: 0 50px 50px;
-}
-
-.product-detail .box-bg1 {
-  background: url(../../images/products/XS-02.jpg) no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.product-detail .box-bg2 {
-  background: url(../../images/products/XS-Series_03.jpg) no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.product-detail .box-bg3 {
-  background: url(../../images/products/XS-Series_04.jpg) no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 
 .product-detail .box .box-item {
@@ -38,6 +27,35 @@
   padding-top: 350px;
   max-width: 1200px;
   margin: auto;
+}
+
+.product-detail .box .desc {
+  padding-top:50px;
+}
+
+.product-detail .box .desc p {
+  font-size:18px;
+  color: #fff;
+  line-height: 25px;
+}
+
+.product-detail .box .box-item .number {
+  color: #fff;
+  font-size:80px;
+  font-weight: bold;
+}
+
+.product-detail .box .introduct {
+  color: #fff;
+  font-size:18px;
+}
+
+.product-detail .box .pt-80 {
+  padding-top:80px;
+}
+
+.product-detail .box .pt-50 {
+  padding-top: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -51,6 +69,7 @@
   flex-direction: row-reverse;
   padding-top: 290px;
 }
+
 @media screen and (max-width: 767px) {
   .product-detail .box .box-item.box-reverse {
     padding-top: 200px;
@@ -107,6 +126,7 @@
   align-items: baseline;
   border-bottom: 2px solid;
 }
+
 @media screen and (max-width: 767px) {
   .product-detail .box .box-item .box-content .box-content-title {
     display: block;
@@ -119,12 +139,11 @@
   width: 280px;
 }
 
-.product-detail .box .box-item .box-content .box-content-main p {
+.product-detail .box .box-item .box-content-main p {
   color: #eee;
   font-size: 18px;
   line-height: 26px;
   margin-top: 20px;
-  text-align: justify;
 }
 
 .product-detail .box .box-item .box-content .box-content-title h1 {
@@ -135,3 +154,57 @@
   font-size: 16px;
   padding-left: 10px;
 }
+
+
+/* background xs-series */
+.product-detail.xs-series .box-bg1 {
+  background: url(../../images/products/XS-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.xs-series .box-bg2 {
+  background: url(../../images/products/XS-Series_03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.xs-series .box-bg3 {
+  background: url(../../images/products/XS-Series_04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.xs-series .box-bg4 {
+  background: url(../../images/products/XS-Series_05.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background xs-series */
+
+
+/* background ns-series */
+.product-detail.ns-series .box-bg1 {
+  background: url(../../images/products/ns-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ns-series .box-bg2 {
+  background: url(../../images/products/ns-03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ns-series .box-bg3 {
+  background: url(../../images/products/ns-04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ns-series .box-bg4 {
+  background: url(../../images/products/ns-05.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */

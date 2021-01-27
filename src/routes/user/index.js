@@ -547,15 +547,36 @@ router.get('/products-type', (_, res) => {
   res.render('user/products-type', {title: "Products Type"})
 })
 
-router.get('/products', (_, res) => {
-  res.render('user/products', {title: "Products"})
-})
-
-router.get('/product-detail', (_, res) => {
-  res.render('user/product-detail', {title: "Products Detail"})
-})
-
 router.get('/news', (_, res) => {
   res.render('user/news', {title: "News"})
+})
+
+router.get('/product-residential', (_, res) => {
+  res.render('user/product-residential', {title: "Residential"})
+})
+
+router.get('/product-commercial', (_, res) => {
+  res.render('user/product-commercial', {title: "Commercial"})
+})
+
+router.get('/product-ground', (_, res) => {
+  res.render('user/product-ground', {title: "Ground"})
+})
+
+router.get('/product-energy', (_, res) => {
+  res.render('user/product-energy', {title: "Energy"})
+})
+
+router.get('/product-monitoring', (_, res) => {
+  res.render('user/product-monitoring', {title: "Monitoring"})
+})
+
+router.get('/product-xs', (_, res) => {
+  res.render('user/product-xs', {title: "XS Series"})
+})
+
+
+router.get('/product-ns', (_, res) => {
+  res.render('user/product-ns', {title: "NS Series"})
 })
 module.exports = router
