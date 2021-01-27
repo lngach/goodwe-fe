@@ -2,6 +2,10 @@ const express = require('express')
 const router = express.Router()
 
 // Start Bien tan dan dung
+router.get('/bien-tan-dan-dung', (_, res) => {
+  res.render('bien-tan-dan-dung/index', { title: 'Biến tần dân dụng' })
+})
+
 router.get('/bien-tan-dan-dung/dong-xs', (_, res) => {
   res.render('bien-tan-dan-dung/dong-xs', { title: 'Dòng XS' })
 })
@@ -26,6 +30,10 @@ router.get('/bien-tan-dan-dung/dong-sdt-g2', (_, res) => {
 // ====================================================== //
 
 // Start Bien tan thuong mai
+router.get('/bien-tan-thuong-mai', (_, res) => {
+  res.render('bien-tan-thuong-mai/index', { title: 'Biến tần thương mại' })
+})
+
 router.get('/bien-tan-thuong-mai/dong-smt', (_, res) => {
   res.render('bien-tan-thuong-mai/dong-smt', { title: 'Dòng SMT' })
 })
@@ -42,6 +50,10 @@ router.get('/bien-tan-thuong-mai/dong-ht', (_, res) => {
 // ====================================================== //
 
 // Start Bien tan cong suat lon
+router.get('/bien-tan-cong-suat-lon', (_, res) => {
+  res.render('bien-tan-cong-suat-lon/index', { title: 'Biến tần công suất lớn' })
+})
+
 router.get('/bien-tan-cong-suat-lon/dong-ht', (_, res) => {
   res.render('bien-tan-cong-suat-lon/dong-ht', { title: 'Dòng HT' })
 })
@@ -51,6 +63,10 @@ router.get('/bien-tan-cong-suat-lon/dong-ht', (_, res) => {
 // ====================================================== //
 
 // Start Bien tan luu tru
+router.get('/bien-tan-luu-tru', (_, res) => {
+  res.render('bien-tan-luu-tru/index', { title: 'Biến tầng lưu trữ' })
+})
+
 router.get('/bien-tan-luu-tru/dong-et', (_, res) => {
   res.render('bien-tan-luu-tru/dong-et', { title: 'Dòng ET' })
 })
@@ -75,6 +91,10 @@ router.get('/bien-tan-luu-tru/dong-em', (_, res) => {
 // ====================================================== //
 
 // Start He thong giam sat //
+router.get('/he-thong-giam-sat', (_, res) => {
+  res.render('he-thong-giam-sat/index', { title: 'Hệ thống giám sát' })
+})
+
 router.get('/he-thong-giam-sat/he-thong-quan-ly-nang-luong-thong-minh', (_, res) => {
   res.render('he-thong-giam-sat/he-thong-quan-ly-nang-luong-thong-minh', { title: 'Hệ thống quản lý năng lượng thông minh' })
 })
