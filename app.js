@@ -6,6 +6,9 @@ const pagesRouter = require('./src/routes/user/index')
 const solutionRouter = require('./src/routes/giai-phap/index')
 const supportRouter = require('./src/routes/ho-tro/index')
 const aboutRouter = require('./src/routes/ve-chung-toi/index')
+const productRouter = require('./src/routes/san-pham/index')
+const productTypeRouter = require('./src/routes/loai-san-pham/index')
+
 const sequelize = require('./src/utils/provider')
 const Category = require('./src/models/category')
 const Provider = require('./src/models/provider')
@@ -146,6 +149,8 @@ app.use('/giai-phap', solutionRouter)
 app.use('/ho-tro', supportRouter)
 app.use('/ve-chung-toi', aboutRouter)
 app.use(pagesRouter)
+app.use(productRouter)
+app.use(productTypeRouter)
 
 // catch 404 and forward to error handler
 app.use(function (_, res) {

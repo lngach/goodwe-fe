@@ -99,3 +99,5 @@ router.get('/he-thong-giam-sat/ezlogger-pro', (_, res) => {
   res.render('he-thong-giam-sat/ezlogger-pro', { title: 'EzzLogger Pro' })
 })
 // End He thong giam sat //
+
+module.exports = router
