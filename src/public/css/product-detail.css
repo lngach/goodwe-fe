@@ -58,6 +58,19 @@
   padding-top: 50px;
 }
 
+.product-detail .box .pt-none {
+  padding-top: 0px;
+}
+
+.product-detail .box .content-center {
+  justify-content: center;
+}
+
+.product-detail .box .width-full {
+  width: 100%;
+  max-width: 100% !important;
+}
+
 @media screen and (max-width: 767px) {
   .product-detail .box .box-item {
     padding: 200px 50px 50px 50px;
@@ -204,6 +217,491 @@
 
 .product-detail.ns-series .box-bg4 {
   background: url(../../images/products/ns-05.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */
+
+
+/* background dns-series */
+.product-detail.dns-series .box-bg1 {
+  background: url(../../images/products/dns-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.dns-series .box-bg2 {
+  background: url(../../images/products/dns-03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.dns-series .box-bg3 {
+  background: url(../../images/products/dns-04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.dns-series .box-bg4 {
+  background: url(../../images/products/dns-05.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */
+
+/* background sdt-series */
+.product-detail.sdt-series .box-bg1 {
+  background: url(../../images/products/sdt-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.sdt-series .box-bg2 {
+  background-image: url(../../images/products/sdt02_right.gif),url(../../images/products/sdt02-01.jpg);
+  /* background-image: url(../../images/products/sdt02-01.jpg); */
+  background-repeat: no-repeat;
+  background-position: 50% center, center center;
+}
+
+.product-detail.sdt-series-thuong-mai .box-bg2 {
+  background-image: url(../../images/products/sdt023.jpg);
+  /* background-image: url(../../images/products/sdt02-01.jpg); */
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.sdt-series .box-bg3 {
+  background: url(../../images/products/sdt03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.sdt-series .box-bg4 {
+  background: url(../../images/products/sdt04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */
+
+/* background sdt-series */
+.product-detail.sdt-g2-series .box-bg1 {
+  background: url(../../images/products/sdtg2-03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.sdt-g2-series .box-bg2 {
+  background-image: url(../../images/products/sdt-g2_03.jpg);
+  /* background-image: url(../../images/products/sdt-g202-01.jpg); */
+  background-repeat: no-repeat;
+  background-position: 50% center, center center;
+}
+
+.product-detail.sdt-g2-series .box-bg3 {
+  background: url(../../images/products/sdt-g2_04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.sdt-g2-series .box-bg4 {
+  background: url(../../images/products/sdt-g2_05.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */
+
+/* background sdt-series */
+.product-detail.ams-series .box-bg1 {
+  background: url(../../images/products/ams-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ams-series .box-bg2 {
+  background-image: url(../../images/products/4-mppt.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% center, center center;
+}
+
+.product-detail.ams-series .box-bg3 {
+  background: url(../../images/products/A-MS-DC-Oversizing.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ams-series .box-bg4 {
+  background: url(../../images/products/A-MS-bifacial.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ams-series .box-bg5 {
+  background: url(../../images/products/A-MS-Low-Start-up.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ams-series .box-bg6 {
+  background: url(../../images/products/A-MS-afci.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */
+
+
+/* background sdt-series */
+.product-detail.ms-series .box-bg1 {
+  background: url(../../images/products/ms-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ms-series .box-bg2 {
+  background-image: url(../../images/products/ms-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ms-series .box-bg3 {
+  background: url(../../images/products/ms-04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */
+
+/* background sdt-series */
+.product-detail.lvsmt-series .box-bg1 {
+  background: url(../../images/products/lvsmt-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lvsmt-series .box-bg2 {
+  background-image: url(../../images/products/smt5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lvsmt-series .box-bg3 {
+  background: url(../../images/products/smt2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lvsmt-series .box-bg4 {
+  background: url(../../images/products/smt3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lvsmt-series .box-bg5 {
+  background: url(../../images/products/smt4.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */
+
+/* background sdt-series */
+.product-detail.lvdt-series .box-bg1 {
+  background: url(../../images/products/lvdt-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lvdt-series .box-bg2 {
+  background-image: url(../../images/products/dt02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lvdt-series .box-bg3 {
+  background: url(../../images/products/dt03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lvdt-series .box-bg4 {
+  background: url(../../images/products/dt04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lvdt-series .box-bg5 {
+  background: url(../../images/products/dt04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */
+
+
+/* background sdt-series */
+.product-detail.sdt-g2-02-series .box-bg1 {
+  background: url(../../images/products/sdtg217kw-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.sdt-g2-02-series .box-bg2 {
+  background-image: url(../../images/products/sdt-g2-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.sdt-g2-02-series .box-bg3 {
+  background: url(../../images/products/sdt-g2-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.sdt-g2-02-series .box-bg4 {
+  background: url(../../images/products/sdt-g2-03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.sdt-g2-02-series .box-bg5 {
+  background: url(../../images/products/sdt-g2-04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */
+
+/* background sdt-series */
+.product-detail.lvmt-series .box-bg1 {
+  background: url(../../images/products/mt03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lvmt-series .box-bg2 {
+  background-image: url(../../images/products/mt03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lvmt-series .box-bg3 {
+  background: url(../../images/products/mt04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lvmt-series .box-bg4 {
+  background: url(../../images/products/mt05.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */
+
+/* background sdt-series */
+.product-detail.mt-series .box-bg1 {
+  background: url(../../images/products/mt-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.mt-series .box-bg2 {
+  background-image: url(../../images/products/mt02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.mt-series .box-bg3 {
+  background: url(../../images/products/mt03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.mt-series .box-bg4 {
+  background: url(../../images/products/mt04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */
+
+/* background sdt-series */
+.product-detail.ht-series .box-bg1 {
+  background: url(../../images/products/ht-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ht-series .box-bg2 {
+  background-image: url(../../images/products/ht-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ht-series .box-bg3 {
+  background: url(../../images/products/ht-04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ht-series .box-bg4 {
+  background: url(../../images/products/ht-05.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ht-series .box-bg5 {
+  background: url(../../images/products/ht-06.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ht-series .box-bg6 {
+  background: url(../../images/products/ht-06.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */
+
+/* background sdt-series */
+.product-detail.ht-csl-series .box-bg1 {
+  background: url(../../images/products/ht-csl.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ht-csl-series .box-bg2 {
+  background-image: url(../../images/products/ht-csl-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ht-csl-series .box-bg3 {
+  background: url(../../images/products/smt4.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ht-csl-series .box-bg4 {
+  background: url(../../images/products/sdt-g2-04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ht-csl-series .box-bg5 {
+  background: url(../../images/products/ht-csl-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ht-csl-series .box-bg6 {
+  background: url(../../images/products/ht-csl-03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ht-csl-series .box-bg7 {
+  background: url(../../images/products/ht-csl-04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */
+
+/* background sdt-series */
+.product-detail.et-series .box-bg1 {
+  background: url(../../images/products/et01.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.et-series .box-bg2 {
+  background-image: url(../../images/products/et02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.et-series .box-bg3 {
+  background: url(../../images/products/et03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.et-series .box-bg4 {
+  background: url(../../images/products/et04.gif) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.et-series .box-bg5 {
+  background: url(../../images/products/et05.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */
+
+/* background sdt-series */
+.product-detail.eh-series .box-bg1 {
+  background: url(../../images/products/bt01.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.bt-series .box-bg2 {
+  background-image: url(../../images/products/bt02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.bt-series .box-bg3 {
+  background: url(../../images/products/bt03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.bt-series .box-bg4 {
+  background: url(../../images/products/bt04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.bt-series .box-bg5 {
+  background: url(../../images/products/et05.gif) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ns-series */
+
+/* background sdt-series */
+.product-detail.eh-series .box-bg1 {
+  background: url(../../images/products/eh-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.eh-series .box-bg2 {
+  background-image: url(../../images/products/eh-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.eh-series .box-bg3 {
+  background: url(../../images/products/et04.gif) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.eh-series .box-bg4 {
+  background: url(../../images/products/eh-04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.eh-series .box-bg5 {
+  background: url(../../images/products/eh-05.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
