@@ -122,6 +122,14 @@ router.get('/bien-tan-luu-tru/dong-es', (_, res) => {
 router.get('/bien-tan-luu-tru/dong-em', (_, res) => {
   res.render('bien-tan-luu-tru/dong-em', { title: 'Dòng EM' })
 })
+
+router.get('/bien-tan-luu-tru/dong-aes', (_, res) => {
+  res.render('bien-tan-luu-tru/dong-aes', { title: 'Dòng A-ES' })
+})
+
+router.get('/bien-tan-luu-tru/dong-ehb', (_, res) => {
+  res.render('bien-tan-luu-tru/dong-ehb', { title: 'Dòng E-HB' })
+})
 // End Bien tan luu tru //
 
 // ====================================================== //
