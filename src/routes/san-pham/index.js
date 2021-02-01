@@ -130,6 +130,14 @@ router.get('/bien-tan-luu-tru/dong-aes', (_, res) => {
 router.get('/bien-tan-luu-tru/dong-ehb', (_, res) => {
   res.render('bien-tan-luu-tru/dong-ehb', { title: 'Dòng E-HB' })
 })
+
+router.get('/bien-tan-luu-tru/dong-btc', (_, res) => {
+  res.render('bien-tan-luu-tru/dong-btc', { title: 'Dòng BTC' })
+})
+
+router.get('/bien-tan-luu-tru/dong-lynx', (_, res) => {
+  res.render('bien-tan-luu-tru/dong-lynx', { title: 'Dòng Lynx' })
+})
 // End Bien tan luu tru //
 
 // ====================================================== //
@@ -155,12 +163,12 @@ router.get('/he-thong-giam-sat/kiem-soat-nang-luong-thong-minh', (_, res) => {
   res.render('he-thong-giam-sat/kiem-soat-nang-luong-thong-minh', { title: 'Kiểm soát năng lượng thông minh' })
 })
 
-router.get('/he-thong-giam-sat/hop-truyen-thong-diem-mat-troi', (_, res) => {
-  res.render('he-thong-giam-sat/hop-truyen-thong-diem-mat-troi', { title: 'Hộp truyền thông năng lượng mặt trời - Hộp truyền thông thông minh' })
+router.get('/he-thong-giam-sat/hop-truyen-thong-thong-minh', (_, res) => {
+  res.render('he-thong-giam-sat/hop-truyen-thong-thong-minh', { title: 'Hộp truyền thông năng lượng mặt trời - Hộp truyền thông thông minh' })
 })
 
-router.get('/he-thong-giam-sat/ezlogger-pro', (_, res) => {
-  res.render('he-thong-giam-sat/ezlogger-pro', { title: 'EzzLogger Pro' })
+router.get('/he-thong-giam-sat/ez-logger', (_, res) => {
+  res.render('he-thong-giam-sat/ez-logger', { title: 'EzzLogger Pro' })
 })
 // End He thong giam sat //
 

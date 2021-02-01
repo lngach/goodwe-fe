@@ -58,6 +58,10 @@
   padding-top: 50px;
 }
 
+.product-detail .box .pt-500 {
+  padding-top: 500px;
+}
+
 .product-detail .box .pt-none {
   padding-top: 0px;
 }
@@ -879,6 +883,179 @@
 
 .product-detail.ehb-series .box-bg6 {
   background: url(../../images/products/ehb-07.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ehb-series */
+
+/* background ehb-series */
+.product-detail.btc-series .box-bg1 {
+  background: url(../../images/products/btc-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.btc-series .box-bg2 {
+  background-image: url(../../images/products/btc-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.btc-series .box-bg3 {
+  background: url(../../images/products/btc-04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.btc-series .box-bg4 {
+  background: url(../../images/products/btc-05.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ehb-series */
+
+/* background ehb-series */
+.product-detail.lynx-series .box-bg1 {
+  background: url(../../images/products/ly-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lynx-series .box-bg2 {
+  background-image: url(../../images/products/ly-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lynx-series .box-bg3 {
+  background: url(../../images/products/ly-04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lynx-series .box-bg4 {
+  background: url(../../images/products/ly-05.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lynx-series .box-bg5 {
+  background: url(../../images/products/ly-06.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.lynx-series .box-bg6 {
+  background: url(../../images/products/ly-07.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ehb-series */
+
+/* background ehb-series */
+.product-detail.sems-series .box-bg1 {
+  background: url(../../images/products/sems-01.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.sems-series .box-bg2 {
+  background-image: url(../../images/products/sems-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.sems-series .box-bg3 {
+  background: url(../../images/products/sems-03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.sems-series .box-bg4 {
+  background: url(../../images/products/sems-04.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.sems-series .box-bg5 {
+  background: url(../../images/products/sems-05.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ehb-series */
+
+/* background ehb-series */
+.product-detail.smart-series .box-bg1 {
+  background: url(../../images/products/smart-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.smart-series .box-bg2 {
+  background-image: url(../../images/products/smart-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ehb-series */
+
+/* background ehb-series */
+.product-detail.wifi-series .box-bg1 {
+  background: url(../../images/products/wifi-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.wifi-series .box-bg2 {
+  background-image: url(../../images/products/wifi-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ehb-series */
+
+/* background ehb-series */
+.product-detail.sec1000-series .box-bg1 {
+  background: url(../../images/products/sec1000-01.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.sec1000-series .box-bg2 {
+  background-image: url(../../images/products/sec1000-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* end background ehb-series */
+
+/* background ehb-series */
+.product-detail.ez-series .box-bg1 {
+  background: url(../../images/products/ez-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ez-series .box-bg2 {
+  background-image: url(../../images/products/ez-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ez-series .box-bg3 {
+  background-image: url(../../images/products/ez-04.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-detail.ez-series .box-bg4 {
+  background-image: url(../../images/products/ez-05.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
