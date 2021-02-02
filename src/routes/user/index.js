@@ -583,4 +583,12 @@ router.get('/product-xs', (_, res) => {
 router.get('/product-ns', (_, res) => {
   res.render('user/product-ns', {title: "NS Series"})
 })
+
+router.get('/product-dns', (_, res) => {
+  res.render('user/product-dns', {title: "DNS Series"})
+})
+
+router.get('/product-sdt', (_, res) => {
+  res.render('user/product-sdt', {title: "SDT Series"})
+})
 module.exports = router
