@@ -1,7 +1,7 @@
-const HOST = 'localhost'
-const USER = 'root'
-const PASSWORD = "1103"
-const DATABASE = 'solar_development'
+const HOST = 'solar.cwmegppghlv2.ap-southeast-1.rds.amazonaws.com'
+const USER = 'solar'
+const PASSWORD = "solargoodwe"
+const DATABASE = 'solar'
 const ADAPTER = 'mysql'
 
 module.exports = {
