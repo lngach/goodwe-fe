@@ -17,4 +17,12 @@ router.get('/su-nghiep', (_, res) => {
     res.render('ve-chung-toi/su-nghiep', { title: 'Sự nghiệp Goodwe' })
 })
 
+router.get('/tin-tuc-chi-tiet', (_, res) => {
+    res.render('ve-chung-toi/tin-tuc-chi-tiet', { title: 'Tin tuc chi tiet' })
+})
+
+router.get('/du-an-chi-tiet', (_, res) => {
+    res.render('ve-chung-toi/du-an-chi-tiet', { title: 'Du an chi tiet' })
+})
+
 module.exports = router

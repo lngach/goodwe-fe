@@ -1705,4 +1705,52 @@ body {
 }
 /* end style page tin tuc  */
 
+/* style page tin tuc detail  */
+
+.tin-tuc-detail {
+  margin-bottom: 50px;
+}
+
+.tin-tuc-detail .main {
+  margin-top:50px;
+}
+
+.tin-tuc-detail .title {
+  font-size: 20px;
+  color: #666666;
+  text-align: center;
+  font-weight: 400;
+}
+
+.tin-tuc-detail .date-up {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.tin-tuc-detail .text-content {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.tin-tuc-detail .img-content {
+  text-align: center;
+  margin-top:30px;
+}
+
+.tin-tuc-detail .img-content img {
+  max-width: 647px;
+  max-height: 407px;
+}
+
+.tin-tuc-detail .desc-img {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* end style page tin tuc detail  */
+
 /*========================Thank you=================*/
