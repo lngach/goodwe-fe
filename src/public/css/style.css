@@ -1552,4 +1552,157 @@ body {
   border-radius: 50%;
 }
 
+/* style page quan ly du an  */
+
+.quan-ly-du-an a {
+  display: block;
+}
+.quan-ly-du-an .row-custom {
+  padding: 0 10px;
+}
+.quan-ly-du-an .p-0 {
+  padding: 0;
+}
+.quan-ly-du-an .p-5 {
+  padding: 5px;
+}
+.quan-ly-du-an .mt-10 {
+  margin-top: 10px;
+}
+.quan-ly-du-an-item {
+  height: 350px;
+  max-height: 350px;
+  position: relative;
+  cursor: pointer;
+}
+.quan-ly-du-an-item img {
+  height: 350px;
+  max-height: 350px;
+  width: 100%;
+}
+.quan-ly-du-an-item .quan-ly-du-an-desc {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  max-height: 42px;
+}
+.quan-ly-du-an-item:hover .quan-ly-du-an-desc {
+  top: inherit;
+  max-height: 150px;
+}
+.quan-ly-du-an-item:hover .quan-ly-du-an-desc a {
+  display: block;
+}
+.quan-ly-du-an-item .quan-ly-du-an-desc .quan-ly-du-an-title {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 42px;
+}
+.quan-ly-du-an-item .quan-ly-du-an-desc .quan-ly-du-an-sub-title {
+  color: #bfb5b5;
+}
+.quan-ly-du-an-item .quan-ly-du-an-desc .btn-viewDetail {
+  align-items: center;
+  width: 106px;
+  max-width: 106px;
+  margin: 10px auto;
+  height: 38px;
+  border-radius: 20px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* end style page quan ly du an  */
+
+
+/* style page tin tuc  */
+
+.tin-tuc a {
+  display: block;
+}
+.tin-tuc .row-custom {
+  padding: 0 10px;
+}
+.tin-tuc .p-0 {
+  padding: 0;
+}
+.tin-tuc .p-5 {
+  padding: 5px;
+}
+.tin-tuc .mt-10 {
+  margin-top: 10px;
+}
+.tin-tuc-item {
+  height: 350px;
+  max-height: 350px;
+  position: relative;
+  cursor: pointer;
+}
+.tin-tuc-item img {
+  height: 350px;
+  max-height: 350px;
+  width: 100%;
+}
+.tin-tuc-item .tin-tuc-desc {
+  text-align: left;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  max-height: 32px;
+  padding: 0 10px;
+}
+.tin-tuc-item:hover .tin-tuc-desc {
+  top: inherit;
+  max-height: 200px;
+  padding: 0 10px;
+}
+.tin-tuc-item:hover .tin-tuc-desc a {
+  display: block;
+}
+.tin-tuc-item .tin-tuc-desc .tin-tuc-title {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  padding-top: 10px;
+}
+.tin-tuc-item .tin-tuc-desc .tin-tuc-sub-title {
+  color: #bfb5b5;
+}
+.tin-tuc-item .tin-tuc-desc .btn-viewDetail {
+  align-items: center;
+  width: 106px;
+  max-width: 106px;
+  margin: 10px 0;
+  height: 38px;
+  border-radius: 20px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* end style page tin tuc  */
+
 /*========================Thank you=================*/
