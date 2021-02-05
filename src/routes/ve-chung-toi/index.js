@@ -25,4 +25,8 @@ router.get('/du-an-chi-tiet', (_, res) => {
     res.render('ve-chung-toi/du-an-chi-tiet', { title: 'Du an chi tiet' })
 })
 
+router.get('/chi-tiet-san-pham', (_, res) => {
+    res.render('ve-chung-toi/chi-tiet-san-pham', {title: "Chi tiet san pham"})
+  })
+
 module.exports = router
