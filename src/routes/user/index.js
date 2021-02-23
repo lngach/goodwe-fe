@@ -6,13 +6,10 @@ const ProductType = require('../../models/product_type')
 const ProductTypeWithProduct = require('../../models/product_type_with_product')
 const ProductImage = require('../../models/product_image')
 const Provider = require('../../models/provider')
+const News = require('../../models/news')
 const paginate = require('../../config/config.paginate')
 const path = require('path')
 const _ = require('lodash')
-
-// router.get('/', async (_, res) => {
-//   return index(res)
-// })
 
 // router.get('/:slug', async (req, res) => {
 //   switch (req.params.slug) {
@@ -639,6 +636,9 @@ router.get('/danh-muc', (_, res) => {
 })
 
 router.get('/news', (_, res) => {
-  res.render('user/news', {title: "News"})
+  res.render('user/news', { title: "News" })
 })
+
+
+
 module.exports = router

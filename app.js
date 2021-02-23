@@ -9,6 +9,8 @@ const aboutRouter = require('./src/routes/ve-chung-toi/index')
 const productRouter = require('./src/routes/san-pham/index')
 const productTypeRouter = require('./src/routes/loai-san-pham/index')
 
+const newsRouter = require('./src/routes/user/news')
+
 const sequelize = require('./src/utils/provider')
 const Category = require('./src/models/category')
 const Provider = require('./src/models/provider')
@@ -144,6 +146,8 @@ app.use(async (req, res, next) => {
 
   next()
 })
+
+app.use('/tin-tuc', newsRouter)
 
 app.use('/giai-phap', solutionRouter)
 app.use('/ho-tro', supportRouter)
