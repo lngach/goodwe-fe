@@ -1672,6 +1672,7 @@ body {
 
 /* style page tin tuc  */
 
+
 .tin-tuc a {
 	display: block;
 }
@@ -1716,7 +1717,7 @@ body {
 }
 .tin-tuc-item:hover .tin-tuc-desc {
 	top: inherit;
-	max-height: 200px;
+	max-height: 215px;
 	padding: 0 10px;
 }
 .tin-tuc-item:hover .tin-tuc-desc a {

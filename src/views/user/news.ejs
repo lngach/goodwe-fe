@@ -7,18 +7,46 @@
 
 	<body>
 		<% include ../shared/user/navigation.ejs %>
-	
-		<section class="news">
+		<!-- /HEADER -->
+		<% include ../shared/user/breadcrumb.ejs %>
+		<!-- /BREADCRUMB -->
+		<!--about-us start -->
+		<section id="home" class="about-us">
 			<div class="container">
-				 <div class="row row-custom mt-10">
+				<div class="about-us-content">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="single-about-us">
+								<div class="about-us-txt">
+									<h2>
+										Tin Tức
+									</h2>
+								</div><!--/.about-us-txt-->
+							</div><!--/.single-about-us-->
+						</div><!--/.col-->
+						<div class="col-sm-0">
+							<div class="single-about-us">
+								
+							</div><!--/.single-about-us-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.about-us-content-->
+			</div><!--/.container-->
+
+		</section><!--/.about-us-->
+		<!--about-us end -->
+		
+		<section class="tin-tuc">
+			<div class="container-fluid p-0">
+				 <div class="row row-custom">
 					 	<% news.forEach(item => { %> 
 						<div class="col-sm-4 p-5">
 							 <a href="/tin-tuc/<%= item.slug %>">
-									<div class="news-item">
+									<div class="tin-tuc-item text-left">
 										 <img src="<%= item.image %>" alt="<%= item.slug %>">
-										 <div class="news-desc">
-												<h2 class="news-title"><%= item.title %></h2>
-												<p class="news-detail">
+										 <div class="tin-tuc-desc">
+												<h2 class="tin-tuc-title"><%= item.title %></h2>
+												<p class="tin-tuc-detail">
 													<%- item.content.slice(0, 250) %>...
 												</p>
 							 <a href="#">
