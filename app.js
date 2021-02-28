@@ -149,6 +149,8 @@ app.use(async (req, res, next) => {
 
 app.use('/tin-tuc', newsRouter)
 
+// app.use('/tin-tuc/chi-tiet', newsRouter)
+
 app.use('/giai-phap', solutionRouter)
 app.use('/ho-tro', supportRouter)
 app.use('/ve-chung-toi', aboutRouter)

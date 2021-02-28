@@ -32,7 +32,16 @@ router.get('/', async (req, res) => {
           meta: null,
         })
       }
-  })
+})
 
+router.get('/:slug', async (req, res) => {
+  try {
+    const slug = req.params.slug
+    const _new = await News.findOne({ where: { slug: slug } })
+    res.render('user/news-deltail', { title: _new.title, _new: _new })
+  } catch (error) {
+    res.render('user/news-deltail', { title: 'Chi tiết sản phẩm', _new: null })
+  }
+})
 
-  module.exports = router
+module.exports = router

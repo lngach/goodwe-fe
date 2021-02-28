@@ -41,7 +41,7 @@
 				 <div class="row row-custom">
 					 	<% news.forEach(item => { %> 
 						<div class="col-sm-4 p-5">
-							 <a href="/tin-tuc/<%= item.slug %>">
+							 <a href="tin-tuc/<%= item.slug %>">
 									<div class="tin-tuc-item text-left">
 										 <img src="<%= item.image %>" alt="<%= item.slug %>">
 										 <div class="tin-tuc-desc">
@@ -49,7 +49,7 @@
 												<p class="tin-tuc-detail">
 													<%- item.content.slice(0, 250) %>...
 												</p>
-							 <a href="#">
+							 <a href="tin-tuc/<%= item.slug %>">
 							 <div class="btn-viewDetail">
 							 <span>View Details</span>
 							 </div>
