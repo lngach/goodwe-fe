@@ -1,4 +1,5 @@
 const express = require('express')
+const Product_type = require('../../models/product_type')
 const router = express.Router()
 
 router.get('/san-pham', (_, res) => {
@@ -23,6 +24,15 @@ router.get('/bien-tan-luu-tru', (_, res) => {
 
 router.get('/he-thong-giam-sat', (_, res) => {
   res.render('loai-san-pham/he-thong-giam-sat', { title: 'Hệ thống giám sát' })
+})
+
+router.get('/san-pham/san-pham-khac', async (req, res) => {
+  try {
+    const product_type = await Product_type.findAll();
+    res.render('loai-san-pham/chi-tiet-san-pham', { title: product_type.title, product_type: product_type })
+  } catch (error) {
+    res.render('loai-san-pham/chi-tiet-san-pham', { title: 'San pham khac', product_type: null })
+  }
 })
 
 module.exports = router
