@@ -110,6 +110,7 @@ html,
 body {
 	height: 100%;
 	z-index: 2;
+	scroll-behavior: smooth;
 }
 
 [placeholder]:focus::-webkit-input-placeholder {
