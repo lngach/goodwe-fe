@@ -52,6 +52,7 @@ body {
 	max-width: 1920px;
 	margin: 0 auto;
 	overflow-x: hidden;
+	background-color: rgba(0, 218, 255, 0.25);
 }
 
 a,
@@ -207,7 +208,7 @@ body {
 	color: #fff;
 	font-size: 14px;
 	text-transform: capitalize;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: 500;
 	-webkit-transition: all 0.25s ease-in-out 0s;
 	-moz-transition: all 0.25s ease-in-out 0s;
