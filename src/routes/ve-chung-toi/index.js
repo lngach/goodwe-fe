@@ -6,15 +6,15 @@ router.get('/quan-ly-chat-luong', (_, res) => {
 })
 
 router.get('/du-an', (_, res) => {
-    res.render('ve-chung-toi/du-an', { title: 'Dự án TeslaPower VN trên toàn cầu' })
+    res.render('ve-chung-toi/du-an', { title: 'Dự án HDTSolar VN trên toàn cầu' })
 })
 
 // router.get('/tin-tuc', (_, res) => {
-//     res.render('ve-chung-toi/tin-tuc', { title: 'Tin tức mới nhất từ TeslaPower VN' })
+//     res.render('ve-chung-toi/tin-tuc', { title: 'Tin tức mới nhất từ HDTSolar VN' })
 // })
 
 router.get('/su-nghiep', (_, res) => {
-    res.render('ve-chung-toi/su-nghiep', { title: 'Sự nghiệp TeslaPower VN' })
+    res.render('ve-chung-toi/su-nghiep', { title: 'Sự nghiệp HDTSolar VN' })
 })
 
 router.get('/tin-tuc-chi-tiet', (_, res) => {
