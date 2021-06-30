@@ -8,6 +8,7 @@ const supportRouter = require('./src/routes/ho-tro/index')
 const aboutRouter = require('./src/routes/ve-chung-toi/index')
 const productRouter = require('./src/routes/san-pham/index')
 const productTypeRouter = require('./src/routes/loai-san-pham/index')
+const sslRouter = require('./src/routes/ssl-verify/index')
 
 const newsRouter = require('./src/routes/user/news')
 
@@ -157,6 +158,7 @@ app.use('/ve-chung-toi', aboutRouter)
 app.use(pagesRouter)
 app.use(productRouter)
 app.use(productTypeRouter)
+app.use(sslRouter)
 
 // catch 404 and forward to error handler
 app.use(function (_, res) {
