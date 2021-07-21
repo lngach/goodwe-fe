@@ -1,156 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <% include ../shared/user/styles.ejs %>
-  </head>
 
-  <body>
-    <!-- HEADER -->
-    <% include ../shared/user/header.ejs %>
-    <!-- /HEADER -->
+<head>
+	<% include ../shared/user/styles.ejs %>
+	<link href="/css/contact.css" rel="stylesheet" type="text/css" />
+</head>
 
-    <div id="vide">
-        <div class="container">
-            <div class="banner-info">
-                <div class="dump-height"></div>
-            </div>
-        </div>
-    </div>
+<body>
+		<div class="fixed-navi">
+		<% include ../shared/user/navigation.ejs %>
+			</div>
+		<!-- contact -->
+		<div class="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.4369242779158!2d107.10496631442!3d10.386829969104877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317571d9e5c50a57%3A0x64808fc00a1cb47c!2zMjEyIE5ndXnhu4VuIEjhu691IEPhuqNuaCwgUGjGsOG7nW5nIFRo4buRbmcgTmjhuqV0LCBUaMOgbmggcGjhu5EgVsWpbmcgVOG6p3UsIELDoCBS4buLYSAtIFbFqW5nIFTDoHUsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1626871168988!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+					<div class="col-md-5">
+						<p style="font-size: 1.3em">Nếu bạn quan tâm đến sản phẩm hoặc bất kì thắc mắc nào, vui lòng chọn liên hệ dưới đây chúng tôi sẽ giải
+							đáp cho bạn.
+						</p>
+						<br>
+						<div>
+							<form action='#' class="form">
+								<div class='field'>
+									<input placeholder='Tên của bạn'>
+									<label>Tên của bạn</label>
+								</div>
+								<div class='field'>
+									<input placeholder='Email' type='email'>
+									<label>Email</label>
+								</div>
+								<div class='field'>
+									<input placeholder='Tin nhắn hỏi đáp..' type='text'>
+									<label>Tin nhắn hỏi đáp..</label>
+								</div>
+								<div class='field form-actions'>
+									<button type='submit'>Xác nhận</button>
+								</div>
+							</form>
+						</div>
+						<div>
+							<div class="map-grid">
+								<ul>
+									<br>
+									<li>
+										<p>
+											<i class="fa fa-arrow-right" aria-hidden="true"></i>
+											Địa chỉ: 212-B18 Nguyễn Hữu Cảnh, Phường Thắng Nhất, Thành phố Vũng Tàu.
+										</p>
 
-    <!-- <div class="banner-top">
-        <div class="container">
-            <h3 >Liên hệ</h3>
-            <h4><a href="/">Trang chủ</a><label>/</label>Liên hệ</h4>
-            <div class="clearfix"> </div>
-        </div>
-    </div> -->
-    
-    <!-- contact -->
-    <div class="contact">
-        <div class="container">
-            <div class="spec ">
-                <h3>Liên hệ</h3>
-                    <div class="ser-t">
-                        <b></b>
-                        <span><i></i></span>
-                        <b class="line"></b>
-                    </div>
-            </div>
-            <div class=" contact-w3">	
-                <div class="col-md-5 contact-right">	
-                    <img src="/images/cac.jpg" class="img-responsive" alt="">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7946081896084!2d106.78847871480048!3d10.750306992339208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317525eacbd00a69%3A0xb33feb3817a03b2c!2zTmfhu41jIFF14buRYyBDb21wdXRlcg!5e0!3m2!1sen!2s!4v1596437639089!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-                <div class="col-md-7 contact-left">
-                    <h4>Thông tin liên hệ</h4>
-                    <p> Nếu bạn quan tâm đến sản phẩm hoặc bất kì thắc mắc nào, vui lòng chọn liên hệ dưới đây chúng tôi sẽ giải đáp cho bạn.</p>
-                    <ul class="contact-list">
-                        <li> <i class="fa fa-map-marker" aria-hidden="true"></i> Hẻm số 6, đường Lý Thái
-                            Tổ, Phà Cát Lái, Phú Hữu, Nhơn Trạch, Đồng Nai.</li>
-                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:lngach@mail.com">Goodwe@gmail.com</a></li>
-                        <li> <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+84888495490"> 0888495490 </a></li>
-                        <li> <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+84906965524"> 0906965524 </a></li>
-                    </ul>
-                    <div id="container">
-                        <!--Horizontal Tab-->
-                        <div id="parentHorizontalTab">
-                            <ul class="resp-tabs-list hor_1">
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
-                                <li> <i class="fa fa-map-marker" aria-hidden="true"></i> </span></li>
-                                <li> <i class="fa fa-phone" aria-hidden="true"></i></li>
-                            </ul>
-                            <div class="resp-tabs-container hor_1">
-                                <div>
-                                    <form action="#" method="post">
-                                        <input type="text" value="Họ và tên" name="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-                                        <input type="email" value="Email" name="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-                                        <textarea name="Message..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Nội dung...</textarea>
-                                        <input type="submit" value="Gửi" >
-                                    </form>
-                                </div>
-                                <div>
-                                    <div class="map-grid">
-                                    <h5>Địa Điểm</h5>
-                                        <ul>
-                                            <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Địa chỉ: Đường Số 6 Lý Thái Tổ, Phà Cát Lái, Phú Hữu, Nhơn Trạch, Đồng Nai.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="map-grid">
-                                        <h5>Liên hệ với chúng tôi</h5>
-                                        <ul>
-                                            <li>Đường dây nóng: <a href="tel:+84888495490"> 0888495490</a> - <a href="tel:+84906965524">0906965524</a></li>
-                                            <li>Hoặc gửi mail về: <a href="mailto:Goodwe@gmail.com">Goodwe@gmail.com</a> </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-            <div class="clearfix"></div>
-        </div>
-        </div>
-    </div>
-    <!-- /Section -->
+									</li>
+									<br>
+									<li>
+										<div class="single-footer-txt">
+											<p>
+												<i class="fa fa-arrow-right" aria-hidden="true"></i>
+												Đường dây nóng: &nbsp;&nbsp; <a href="tel:+84971120413"> 0971120413</a>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="single-footer-txt">
+											<p>
+												<i class="fa fa-arrow-right" aria-hidden="true"></i>
+												Hoặc gửi mail về: <a href="mailto:HDTSolar@gmail.com">HDTSolar@gmail.com</a>
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!-- /Section -->
 
-    <!-- FOOTER -->
-    <% include ../shared/user/footer.ejs %>
-    <!-- /FOOTER -->
-    <!-- jQuery Plugins -->
-    <% include ../shared/user/scripts.ejs %>
-    <script src="/js/easyResponsiveTabs.js" type="text/javascript"></script>
+		<!-- FOOTER -->
+		<% include ../shared/user/footer.ejs %>
+</body>
 
-                    <!--Plug-in Initialisation-->
-                    <script type="text/javascript">
-                        $(document).ready(function() {
-                            //Horizontal Tab
-                            $('#parentHorizontalTab').easyResponsiveTabs({
-                                type: 'default', //Types: default, vertical, accordion
-                                width: 'auto', //auto or any width like 600px
-                                fit: true, // 100% fit in a container
-                                tabidentify: 'hor_1', // The tab groups identifier
-                                activate: function(event) { // Callback function if tab is switched
-                                    var $tab = $(this);
-                                    var $info = $('#nested-tabInfo');
-                                    var $name = $('span', $info);
-                                    $name.text($tab.text());
-                                    $info.show();
-                                }
-                            });
-        
-                            // Child Tab
-                            $('#ChildVerticalTab_1').easyResponsiveTabs({
-                                type: 'vertical',
-                                width: 'auto',
-                                fit: true,
-                                tabidentify: 'ver_1', // The tab groups identifier
-                                activetab_bg: '#fff', // background color for active tabs in this group
-                                inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
-                                active_border_color: '#c1c1c1', // border color for active tabs heads in this group
-                                active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
-                            });
-        
-                            //Vertical Tab
-                            $('#parentVerticalTab').easyResponsiveTabs({
-                                type: 'vertical', //Types: default, vertical, accordion
-                                width: 'auto', //auto or any width like 600px
-                                fit: true, // 100% fit in a container
-                                closed: 'accordion', // Start closed if in accordion view
-                                tabidentify: 'hor_1', // The tab groups identifier
-                                activate: function(event) { // Callback function if tab is switched
-                                    var $tab = $(this);
-                                    var $info = $('#nested-tabInfo2');
-                                    var $name = $('span', $info);
-                                    $name.text($tab.text());
-                                    $info.show();
-                                }
-                            });
-                        });
-                    </script>
-                        
-  </body>
 </html>
