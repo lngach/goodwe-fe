@@ -489,7 +489,7 @@ const _ = require('lodash')
 //       ],
 //     })
 //     res.render('user/index', {
-//       title: 'HDTSolar VN - Sửa chữa lắp đặt thiết bị vi tính',
+//       title: 'Goodwe VN - Sửa chữa lắp đặt thiết bị vi tính',
 //       newProducts,
 //       topSellProducts,
 //       topViewProducts,
@@ -498,7 +498,7 @@ const _ = require('lodash')
 //     })
 //   } catch (error) {
 //     res.render('user/index', {
-//       title: 'HDTSolar VN - Sửa chữa lắp đặt thiết bị vi tính',
+//       title: 'Goodwe VN - Sửa chữa lắp đặt thiết bị vi tính',
 //       newProducts: [],
 //       topSellProducts: [],
 //       topViewProducts: [],
@@ -617,10 +617,10 @@ router.get('/', async (_, res) => {
       where: { isActive: true },
     })
   
-    res.render('user/index', { title: 'Trang Chủ - HDTSolar  VN', inverters, solarPins, solarFans, solarLeds, solarCameras })
+    res.render('user/index', { title: 'Trang Chủ - Goodwe  VN', inverters, solarPins, solarFans, solarLeds, solarCameras })
   } catch (error) {
     res.render('user/index', {
-      title: 'Trang Chủ - HDTSolar  VN',
+      title: 'Trang Chủ - Goodwe  VN',
       inverters: [],
       solarPins: [],
       solarFans: [],

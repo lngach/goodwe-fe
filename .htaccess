@@ -1,0 +1,11 @@
+# Redirecting to appropriate port
+
+RewriteEngine On
+RewriteRule ^$ http://127.0.0.1:3002/ [P,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ http://127.0.0.1:3002/$1 [P,L]
+
+# Note: Replace 3000 with the Port that you created in the Express Hello 
+World App
+

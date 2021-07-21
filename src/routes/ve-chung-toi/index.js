@@ -6,15 +6,15 @@ router.get('/quan-ly-chat-luong', (_, res) => {
 })
 
 router.get('/du-an', (_, res) => {
-    res.render('ve-chung-toi/du-an', { title: 'Dự án HDTSolar VN trên toàn cầu' })
+    res.render('ve-chung-toi/du-an', { title: 'Dự án Goodwe VN trên toàn cầu' })
 })
 
 // router.get('/tin-tuc', (_, res) => {
-//     res.render('ve-chung-toi/tin-tuc', { title: 'Tin tức mới nhất từ HDTSolar VN' })
+//     res.render('ve-chung-toi/tin-tuc', { title: 'Tin tức mới nhất từ Goodwe VN' })
 // })
 
 router.get('/su-nghiep', (_, res) => {
-    res.render('ve-chung-toi/su-nghiep', { title: 'Sự nghiệp HDTSolar VN' })
+    res.render('ve-chung-toi/su-nghiep', { title: 'Sự nghiệp Goodwe VN' })
 })
 
 router.get('/tin-tuc-chi-tiet', (_, res) => {
